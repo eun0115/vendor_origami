@@ -25,10 +25,6 @@ else
     ORIGAMI_BUILDTYPE := UNOFFICIAL
 endif
 
-ifneq ($(ORIGAMI_VERSIONTYPE), beta)
-    ORIGAMI_VERSIONTYPE := Beta
-endif
-
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.origami.version=$(ORIGAMI_VERSION) \
     ro.origami.version.display=$(ORIGAMI_DISPLAY_VERSION) \

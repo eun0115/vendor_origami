@@ -79,8 +79,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
-# Include AOSP audio files
+# Include audio files
 include vendor/origami/config/aosp_audio.mk
+include vendor/origami/config/origami_audio.mk
 
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 # Lineage SDK
