@@ -17,7 +17,7 @@ PRODUCT_PACKAGES += \
      OmniJaws \
      GameMode \
 
-ifneq ($(ORIGAMI_OFFICIAL), true)
+ifeq ($(ORIGAMI_OFFICIAL), true)
 PRODUCT_PACKAGES += \
      Updater
     ORIGAMI_BUILDTYPE := OFFICIAL
