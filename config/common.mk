@@ -2,6 +2,9 @@
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 $(call inherit-product-if-exists, vendor/origami/config/origami.mk)
 
+# Gapps
+$(call inherit-product, vendor/gapps/common/gapps.mk)
+
 PRODUCT_BRAND ?= origamiOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
